@@ -1,0 +1,76 @@
+.requests-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #000000;
+    color: #00FFFF;
+    min-height: 78.7vh;
+}
+  
+.card {
+    background-color: #000000;
+    border: 1px solid #00FFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #00FFFF;
+    padding: 2rem;
+    width: 45%;
+}
+  
+.card h2 {
+    margin-bottom: 1rem;
+    color: #00FFFF;
+    text-align: center;
+}
+  
+.card label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #00FFFF;
+}
+  
+.card input,
+.card textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00FFFF;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #00FFFF;
+    resize: vertical; /* Restringe el cambio de tamaño solo a la dirección vertical */
+}
+  
+.card button {
+    width: 102%;
+    padding: 0.75rem;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.card button:hover {
+    background-color: #FFFFFF;
+}
+  
+.error {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+}
+  
+.response-card pre {
+    background-color: #111111;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #00FFFF;
+    max-height: 800px;
+    overflow-y: auto;
+}

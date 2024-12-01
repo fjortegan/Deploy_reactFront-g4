@@ -1,0 +1,65 @@
+/* Estilo principal del footer */
+.footer {
+    background-color: #000000; /* Fondo negro */
+    color: #00FFFF; /* Azul neón */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  /* Redes sociales */
+  .footer-social {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .social-logo {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0.8) invert(1); /* Ajusta el brillo y los colores */
+    background: none; /* Elimina cualquier fondo */
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00FFFF; /* Resplandor neón */
+  }
+  
+  .social-logo:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5) invert(1); /* Incrementa el brillo */
+    box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF; /* Resplandor más intenso */
+  }
+  
+  
+  /* Información del footer */
+  .footer-info {
+    text-align: right;
+    font-size: 0.9rem;
+  }
+  
+  .footer-info p {
+    margin: 0.2rem 0;
+  }
+  
+  .footer-info p:first-of-type {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Diseño responsivo */
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-social {
+      margin-bottom: 1rem;
+    }
+  
+    .footer-info {
+      text-align: center;
+    }
+  }
+  

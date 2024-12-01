@@ -1,0 +1,89 @@
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85.5vh;
+        background-color: #000000; /* Fondo negro */
+    }
+    
+    .login-form {
+        background-color: #000000; /* Fondo negro */
+        border: 1px solid #00FFFF; /* Borde azul neón */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px #00FFFF; /* Sombra neón */
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .login-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #00FFFF; /* Azul neón */
+        text-align: center;
+    }
+    
+    .input-group {
+        margin-bottom: 40px;
+    }
+
+    .error-message{
+        color: red;
+    }
+    
+    .input-group label {
+        display: block;
+        font-size: 14px;
+        color: #00FFFF; /* Azul neón */
+        margin-bottom: 5px;
+    }
+    
+    .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #00FFFF; /* Borde azul neón */
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        background-color: #000000; /* Fondo negro */
+        color: #00FFFF; /* Texto azul neón */
+    }
+    
+    .input-group input:focus {
+        outline: none;
+        border-color: #FFFFFF; /* Blanco brillante */
+        box-shadow: 0 0 10px #00FFFF; /* Sombra azul neón */
+    }
+    
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #00FFFF; /* Fondo azul neón */
+        border: none;
+        border-radius: 8px;
+        color: #000000; /* Texto negro */
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button[type="submit"]:hover {
+        border: 2px solid #00FFFF; /* Grosor de 2px, sólido, color azul neón */
+        background-color: black; /* Fondo negro */
+        color: #00FFFF; /* Texto en azul neón */
+        cursor: pointer; /* Cambia el cursor a "mano" */
+        transition: all 0.3s ease; /* Transición suave para los cambios */
+    }
+    
+    
+    @media (max-width: 480px) {
+        .login-container {
+        padding: 20px;
+        }
+    
+        .login-form h2 {
+        font-size: 20px;
+        }
+    }
+    

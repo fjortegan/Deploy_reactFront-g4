@@ -1,0 +1,50 @@
+/* Navbar principal */
+.header {
+    background-color: #000000; /* Fondo negro */
+    color: #00FFFF; /* Azul neón */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00FFFF; /* Azul neón */
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    color: #00FFFF; /* Azul neón */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #FFFFFF; /* Blanco brillante al pasar el ratón */
+  }
+  
+  /* Botón de Logout */
+  .logout {
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #00FFFF; /* Borde azul neón */
+    color: #00FFFF; /* Texto azul neón */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease;
+  }
+  
+  .logout:hover {
+    background-color: #00FFFF; /* Fondo azul neón */
+    color: #000000; /* Texto negro */
+    border-color: #FFFFFF; /* Borde blanco */
+  }
+  
