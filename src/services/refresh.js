@@ -1,9 +1,10 @@
 export const Refresh = async (token) => {
-    const url = "https://request-flaskapi-qx9g.onrender.com/refresh";
+    const url = "https://request-flaskapi-g4.onrender.com/refresh";
   
     try {
       const response = await fetch(url, {
         method: "POST",
+        mode: 'cors',
         headers: {
           "Authorization": `Bearer ${token}`,
           "Content-Type": "application/json",
