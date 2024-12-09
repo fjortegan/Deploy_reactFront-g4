@@ -12,6 +12,7 @@ export const useLogin = () => {
     try {
       const response = await fetch(url, {
         method: "POST",
+        mode: 'cors',
         headers: {
           "Authorization": `Basic ${credentials}`,
           "Content-Type": "application/json",
