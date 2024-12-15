@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://request-flaskapi-qx9g.onrender.com"; // Cambia esto si es necesario
+const API_BASE_URL = "https://request-flaskapi-g4.onrender.com"; // Cambia esto si es necesario
 
 /**
  * Realiza una solicitud HTTP al backend en el endpoint `/`.
@@ -19,6 +19,7 @@ const sendRequest = async (method, data = null, headers = {}, token = null, para
   try {
     const response = await fetch(url, {
       method,
+      mode: 'cors',
       headers: { ...defaultHeaders, ...headers },
       body: data ? JSON.stringify(data) : null,
     });
